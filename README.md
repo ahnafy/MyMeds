@@ -4,6 +4,8 @@
 
 [![Build Status](https://travis-ci.org/UMM-CSci-3601-S18/iteration-4-megabittron.svg?branch=master)](https://travis-ci.org/UMM-CSci-3601-S18/iteration-4-megabittron)
 
+[![](https://codescene.io/projects/3293/status.svg) Get more details at **codescene.io**.](https://codescene.io/projects/3293/jobs/latest-successful/results)
+
 ## Table of Contents
 - [What is My Panda](#what-is-my-panda)
 - [Getting Started](#getting-started)
