@@ -20,6 +20,17 @@ A medication begins as incomplete and can be marked as complete by clicking on t
 
  A medication can be edited by clicking on the pen icon on desktop. On a mobile device, the medication must be selected by clicking on it to open its own page, then edited by clicking on the pen icon in the bottom right corner.
  
+ ## Journals
+
+The journals page has two distinct views depending on whether one is on desktop or a mobile device. 
+
+The desktop view contains a sidebar with a **new journal** button, a search bar which searches through the title and content of all journals.
+
+The mobile view contains a navbar, a search bar. In the bottom right corner, there is a button to add a new journal which is indicated by a plus sign. The center of the screen is reserved for listing journals.
+
+### Adding a journal
+To add a new journal on desktop click the **new journal** button located on the sidebar. On mobile, tap the **+** button in the bottom right corner. T
+his presents a dialog box requiring a title for the journal and the content of the journal. 
  
 ## Development and Deployment
 
@@ -39,11 +50,11 @@ Versions used for required packages:
 * MongoDB
 
 ##Programming Languages:
-Java
-TypeScript
-HTML
-CSS
-Bash
+* Java
+* TypeScript
+* HTML
+* CSS
+* Bash
 
 ## Project Setup
 
