@@ -1,5 +1,8 @@
 <div align="middle"><a href="https://www.my-meds.com/"><img src="client/src/android-chrome-512x512.png" width="100px" height="100px"/></a></div>
 
+<div align="middle"><a href="https://my-meds.com"><img src="client/src/assets/images/Mockup.png"/></a></div>
+
+
 ## Medications
 
 The medications page has two distinct views depending on whether the user is on desktop or a mobile device.
