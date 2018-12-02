@@ -30,7 +30,7 @@
     <p matLine *ngIf="goal.end != ''" class="mobile-date">Ends on {{goal.end | date : "MMM d, yyyy"}}</p>
     <mat-divider></mat-divider>
     <div class="mobile-content">
-        <p *ngIf="goal.frequency != 'Does not repeat'">This is a {{goal.frequency | lowercase}} goal</p>
+        <p *ngIf="goal.frequency != 'Does not repeat'">This is a {{goal.frequency | lowercase}} medication</p>
         <p *ngIf="goal.frequency == 'Does not repeat'">This goal does not repeat</p>
         <p>{{goal.purpose}}</p>
     </div>

@@ -21,19 +21,19 @@
                 Home</a>
             <a mat-list-item [routerLink]="['/goals']" (click)="layout.close()" routerLinkActive="nav-active">
                 <mat-icon>playlist_add_check</mat-icon>
-                Goals</a>
+                Medications</a>
             <a mat-list-item [routerLink]="['/journals']" (click)="layout.close()" routerLinkActive="nav-active">
                 <mat-icon><i class="material-icons">import_contacts</i></mat-icon>
                 Journals</a>
             <a mat-list-item [routerLink]="['/resources']" (click)="layout.close()" routerLinkActive="nav-active">
                 <mat-icon><i class="material-icons">contact_phone</i></mat-icon>
-                Resources</a>
+                </a>
             <a mat-list-item [routerLink]="['/summary']" (click)="layout.close()" routerLinkActive="nav-active">
                 <mat-icon><i class="material-icons">assessment</i></mat-icon>
-                Stats</a>
+                </a>
             <a mat-list-item [routerLink]="['/settings']" (click)="layout.close()" routerLinkActive="nav-active">
                 <mat-icon><i class="material-icons">settings</i></mat-icon>
-                Settings</a>
+                </a>
             <a mat-list-item *ngIf="appService.isSignedIn()" (click)="signOut()">
                 <mat-icon>exit_to_app</mat-icon>
                 Logout</a>
@@ -49,15 +49,15 @@
             <span hide-gt-xs>My Panda</span>
             <span flex></span>
             <a class="desktop-goals computer" mat-button [routerLink]="['/goals']" routerLinkActive="nav-active"
-               hide-xs>Goals</a>
+               hide-xs>Medications</a>
             <a class="desktop-journals computer" mat-button [routerLink]="['/journals']" routerLinkActive="nav-active"
                hide-xs>Journals</a>
             <a class="desktop-resources computer" mat-button [routerLink]="['/resources']" routerLinkActive="nav-active"
-               hide-xs>Resources</a>
+               hide-xs></a>
             <a class="desktop-stats computer" mat-button [routerLink]="['/summary']" routerLinkActive="nav-active"
-               hide-xs>Stats</a>
+               hide-xs></a>
             <a class="desktop-settings computer" mat-button [routerLink]="['/settings']" routerLinkActive="nav-active"
-               hide-xs>Settings</a>
+               hide-xs></a>
             <a class="computer" hide-xs>
                 <div *ngIf="!appService.isSignedIn()" class="g-signin2" (click)="signIn()"></div>
                 <button *ngIf="appService.isSignedIn()" mat-raised-button (click)="signOut()">Logout</button>

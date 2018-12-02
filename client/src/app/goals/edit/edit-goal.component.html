@@ -1,5 +1,5 @@
 <form #newGoalForm="ngForm" class="new-object-form">
-    <mat-card-title class="new-object-title">Edit Goal</mat-card-title>
+    <mat-card-title class="new-object-title">Edit Medication</mat-card-title>
 
     <mat-form-field hintLabel="Max 45 characters">
         <input matInput #input maxlength="45"
@@ -12,15 +12,15 @@
                 [(ngModel)]="data.goal.category"
                 placeholder="Category"
                 name="data.goal.category">
-        <mat-option value="business-career">Business and Career</mat-option>
-        <mat-option value="family">Family</mat-option>
-        <mat-option value="finances">Finances</mat-option>
-        <mat-option value="fun-recreation">Fun and Recreation</mat-option>
-        <mat-option value="health">Health</mat-option>
+        <mat-option value="business-career" class="business-career">Blood Pressure</mat-option>
+        <mat-option value="family">Vitamins</mat-option>
+        <mat-option value="finances">Diabetes</mat-option>
+        <mat-option value="fun-recreation">Mental Health</mat-option>
+        <mat-option value="health">Pre-Sick</mat-option>
         <mat-option value="personal-development">Personal Development</mat-option>
         <mat-option value="romance">Romance</mat-option>
         <mat-option value="spiritual">Spiritual</mat-option>
-        <mat-option value="social">Social</mat-option>
+        <mat-option value="social">Anti Anxiety</mat-option>
         <mat-option value="other">Other</mat-option>
     </mat-select>
     <mat-select matInput required class="frequency-list"

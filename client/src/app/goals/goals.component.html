@@ -1,20 +1,20 @@
 <div class="sidenav" [ngClass]="appService.styleClassSelector()" hide-xs>
-    <h2 class="page-title alt-color" *ngIf="this.showAllGoals == false"> Today's Goals</h2>
-    <h2 class="page-title alt-color" *ngIf="this.showAllGoals == true"> All Goals</h2>
+    <h2 class="page-title alt-color" *ngIf="this.showAllGoals == false"> Today's Medications</h2>
+    <h2 class="page-title alt-color" *ngIf="this.showAllGoals == true"> All Medications</h2>
     <hr class="nav-title-divider">
     <button mat-raised-button (click)="newGoalDialog()" class="new-object-button" id="addNewGoal">
-        New Goal
+        New Medication
     </button>
     <mat-card class="all-today-toggle-card">
         <mat-card-content>
-            <mat-checkbox class="show-all-goals" (change)="showAllGoals = $event.checked; getNext()">Show all goals</mat-checkbox>
+            <mat-checkbox class="show-all-goals" (change)="showAllGoals = $event.checked; getNext()">Show all Medications</mat-checkbox>
         </mat-card-content>
     </mat-card>
     <mat-card class="option-selector-card">
         <mat-card-title>Status</mat-card-title>
         <mat-divider></mat-divider>
         <mat-card-content>
-            <a class="no-filters" *ngIf="!showAllGoals">You cannot filter statuses of today's goals.</a>
+            <a class="no-filters" *ngIf="!showAllGoals">You cannot filter statuses of today's Medications.</a>
           <mat-radio-group matInput #input *ngIf="showAllGoals" [(ngModel)]="goalStatus" (change)="loadService()" class="status-radio-group">
               <mat-radio-button id="allStatus" value="all">All</mat-radio-button>
               <mat-radio-button id="complete" value="true">Complete</mat-radio-button>
@@ -65,8 +65,8 @@
                         <mat-icon>delete</mat-icon>
                     </button>
                 </div>
-                <p *ngIf="goal.frequency != 'Does not repeat'">This is a {{goal.frequency | lowercase}} goal</p>
-                <p *ngIf="goal.frequency == 'Does not repeat'">This goal does not repeat</p>
+                <p *ngIf="goal.frequency != 'Does not repeat'">This is a {{goal.frequency | lowercase}} medication</p>
+                <p *ngIf="goal.frequency == 'Does not repeat'">This medication does not repeat</p>
                 <p>{{goal.purpose}}</p>
             </mat-card-content>
         </mat-card>
