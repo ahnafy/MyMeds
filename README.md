@@ -20,6 +20,55 @@ A medication begins as incomplete and can be marked as complete by clicking on t
  A medication can be deleted by clicking the trash icon on desktop. On a mobile device, the medication must be selected by clicking on it to open its own page, then deleted by clicking on the trash icon in the top right corner.
 
  A medication can be edited by clicking on the pen icon on desktop. On a mobile device, the medication must be selected by clicking on it to open its own page, then edited by clicking on the pen icon in the bottom right corner.
+ 
+ 
+## Development and Deployment
+
+Versions used for required packages:
+
+- OpenJDK v1.8.0_141
+- Node v6.11.2
+- Npm v3.10.10
+- @angular/cli v1.0.0
+- Yarn v1.0.2
+- IntelliJ Gradle Plugin
+
+## Stack Used:
+* Angular 5 
+* Apache Spark
+* NodeJS
+* MongoDB
+
+##Programming Languages:
+Java
+TypeScript
+HTML
+CSS
+Bash
+
+## Project Setup
+
+For IntelliJ users, you should be able to clone this repository inside IntelliJ 
+
+- When prompted to create a new IntelliJ project, select **yes**.
+- Select **import project from existing model** and select **Gradle.**
+  - Make sure **Use default Gradle wrapper** is selected.
+- Click **Finish.**
+- If IDEA asks you if you want to compile JavaScript to TypeScript :fire: DO NOT :fire: – if you do it will break your project.
+
+:warning: IDEA will sometimes decide to "help" you by offering
+"Compile TypeScript to JavaScript?" :bangbang: *Never* say "OK" to this
+offer -- if you do it will make a complete mess of your project. We're
+using other tools (`gradle`, `yarn`, and `ng`) to do that compilation. 
+If you let IDEA do it, you'll
+have a ton of JavaScript files cluttering up your project and confusing other
+tools.
+
+## Running the project
+
+- The **build** task will _build_ the entire project (but not run it)
+- The **run** Gradle task will still run your SparkJava server.
+(which is available at ``localhost:4567``)
 
 
 
